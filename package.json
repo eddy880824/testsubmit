@@ -1,0 +1,35 @@
+{
+  "name": "testsubmit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iameddy/testsubmit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iameddy/testsubmit/issues"
+  },
+  "homepage": "https://github.com/iameddy/testsubmit#readme",
+  "dependencies": {
+    "husky": "^3.1.0",
+    "lint-staged": "^12.3.4",
+    "prettier": "^2.5.1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json}": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-plugin-react": "^7.29.2"
+  }
+}
